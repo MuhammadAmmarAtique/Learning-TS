@@ -10,29 +10,50 @@
 // 2) Primitive Types
 
 // a) implicit
-let a = 12;
-let b = "ammar";
-let c = true;
+// let a = 12;
+// let b = "ammar";
+// let c = true;
 
 // b) explicit
-let e: null = null;
-let d: undefined = undefined;
+// let e: null = null;
+// let d: undefined = undefined;
 
 // 3) Arrays
-let arr = [1, 2, 3];
-let arr2 = [123, "ammar"];
-let arr3 = [1, { age: 21, father: "atiq" }];
+// let arr = [1, 2, 3];
+// let arr2 = [123, "ammar"];
+// let arr3 = [1, { age: 21, father: "atiq" }];
 
 // 4) Tuples
-let tupple: [string, number, boolean] = ["ammar", 24, true];
+// let tupple: [string, number, boolean] = ["ammar", 24, true];
 
 //  5) Enumerations
 
-enum StatusCode {
-  clientError = 400,
-  ServerError = 500
-}
+// enum StatusCode {
+//   clientError = 400,
+//   ServerError = 500
+// }
 // console.log(StatusCode.ServerError);
+
+// 6) any,unknown, void,null, undefined, never
+
+// a) any Type
+// let a;
+// a = 12
+// a = "ammar"
+
+// console.log(a.toUpperCase());
+
+// a) unknown Type
+// let a: unknown;
+// a = 12;
+// a = "ammar";
+
+// if (typeof a === "string") {
+//   console.log(a.toUpperCase());
+// }
+
+
+
 
 
 
