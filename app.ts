@@ -7,11 +7,13 @@
 // b)Reference
 
 // 2) Primitive Types
+
 // a) implicit
 let a = 12;
 let b = "ammar";
 let c = true;
-// b)
+
+// b) explicit
 let e: null = null;
 let d: undefined = undefined;
 
