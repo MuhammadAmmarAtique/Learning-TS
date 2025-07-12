@@ -20,3 +20,10 @@ let arr2 = [123, "ammar"];
 let arr3 = [1, { age: 21, father: "atiq" }];
 // 4) Tuples
 let tupple = ["ammar", 24, true];
+//  5) Enumerations
+var StatusCode;
+(function (StatusCode) {
+    StatusCode[StatusCode["clientError"] = 400] = "clientError";
+    StatusCode[StatusCode["ServerError"] = 500] = "ServerError";
+})(StatusCode || (StatusCode = {}));
+console.log(StatusCode.ServerError);

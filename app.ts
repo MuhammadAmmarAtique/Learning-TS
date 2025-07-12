@@ -25,3 +25,14 @@ let arr3 = [1, { age: 21, father: "atiq" }];
 
 // 4) Tuples
 let tupple: [string, number, boolean] = ["ammar", 24, true];
+
+//  5) Enumerations
+
+enum StatusCode {
+  clientError = 400,
+  ServerError = 500
+}
+// console.log(StatusCode.ServerError);
+
+
+
