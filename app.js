@@ -12,3 +12,7 @@ var c = true;
 // b)
 var e = null;
 var d = undefined;
+// 3) Arrays
+var arr = [1, 2, 3];
+var arr2 = [123, "ammar"];
+var arr3 = [1, { age: 21, father: "atiq" }];

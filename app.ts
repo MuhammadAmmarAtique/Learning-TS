@@ -8,9 +8,14 @@
 
 // 2) Primitive Types
 // a) implicit
-let a = 12
-let b = "ammar"
-let c = true
+let a = 12;
+let b = "ammar";
+let c = true;
 // b)
-let e:null = null
-let d:undefined = undefined
+let e: null = null;
+let d: undefined = undefined;
+
+// 3) Arrays
+let arr = [1, 2, 3];
+let arr2 = [123, "ammar"];
+let arr3 = [1, { age: 21, father: "atiq" }];
