@@ -34,7 +34,7 @@
 // }
 // console.log(StatusCode.ServerError);
 
-// 6) any,unknown, void,null, undefined, never
+// 6) any, unknown, void, null, undefined, never
 
 // a) any Type
 // let a;
@@ -43,7 +43,7 @@
 
 // console.log(a.toUpperCase());
 
-// a) unknown Type
+// b) unknown Type
 // let a: unknown;
 // a = 12;
 // a = "ammar";
@@ -52,8 +52,23 @@
 //   console.log(a.toUpperCase());
 // }
 
+// c) void
+// function abcd():void {
+//     console.log("hi");
+// }
+// abcd()
 
+// d+e) null & undefined (same  as JS)
 
+// f) Never
 
+// function test():never {
+//     while (true) {
+//         console.log("infinite");
+        
+//     }
+// }
+// test();
+// console.log("hi");
 
 
