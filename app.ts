@@ -1,6 +1,7 @@
 // 0) How to run Typescript file (2 ways)
 // 1- ts-node nameOfTypescriptFile  (it will directly run typescript file)
 // 2- tsc nameOfTypescriptFile (compile ts file to js file then run js file)
+//  tsc -watch (For automatically compiling ts file to js file)
 
 // 1) Basic Types (2)
 // a)Primitive
@@ -21,3 +22,6 @@ let d: undefined = undefined;
 let arr = [1, 2, 3];
 let arr2 = [123, "ammar"];
 let arr3 = [1, { age: 21, father: "atiq" }];
+
+// 4) Tuples
+let tupple: [string, number, boolean] = ["ammar", 24, true];
