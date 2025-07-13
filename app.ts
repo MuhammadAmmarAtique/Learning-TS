@@ -79,3 +79,26 @@
 // function test(a:number, b: number):number { //Here paramters and return type is defined using "type annotations"
 //     return 5
 // }
+
+// 8) Interfaces and Type Aliases
+// a)Interface
+
+interface UserObj {
+    name: string,
+    email : string,
+    password : string,
+    age : number,
+    male :boolean
+}
+
+function getUserData(obj:UserObj):void {
+    console.log(`Hi my Name is ${obj.name} and mail address is ${obj.email} & I am ${obj.age} years old.`);
+}
+
+getUserData({
+    name:"Ammar",
+    email:"muhammadammaratiq@gmail.com",
+    password:"test123",
+    age:24,
+    male: true
+})
