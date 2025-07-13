@@ -83,22 +83,37 @@
 // 8) Interfaces and Type Aliases
 // a)Interface
 
-interface UserObj {
-    name: string,
-    email : string,
-    password : string,
-    age : number,
-    male :boolean
-}
+// interface User {
+//     name: string,
+//     email : string,
+//     password : string,
+//     age : number,
+// }
 
-function getUserData(obj:UserObj):void {
-    console.log(`Hi my Name is ${obj.name} and mail address is ${obj.email} & I am ${obj.age} years old.`);
-}
+// function getUserData(obj:User):void {
+//     console.log(`Hi my Name is ${obj.name} and mail address is ${obj.email} & I am ${obj.age} years old.`);
+// }
 
-getUserData({
-    name:"Ammar",
-    email:"muhammadammaratiq@gmail.com",
-    password:"test123",
-    age:24,
-    male: true
-})
+// getUserData({
+//     name:"Ammar",
+//     email:"muhammadammaratiq@gmail.com",
+//     password:"test123",
+//     age: 24
+// })
+
+// Extending Interface
+// interface Admin extends User{
+//     admin: boolean
+// }
+
+// function DisplayAdminDetails(obj:Admin) {
+//     console.log(obj.admin);
+// }
+
+// DisplayAdminDetails({
+//     name:"Ammar",
+//     email:"muhammadammaratiq@gmail.com",
+//     password:"test123",
+//     age: 24,
+//     admin: false
+// })
