@@ -71,4 +71,8 @@
 // test();
 // console.log("hi");
 
+// 7) Type Inference and Type Annotation
+
+let a = 12;  //inference
+let b:string = "ammar" //annotation
 

@@ -39,10 +39,10 @@
 //   console.log(a.toUpperCase());
 // }
 // c) void
-function abcd() {
-    console.log("hi");
-}
-abcd();
+// function abcd():void {
+//     console.log("hi");
+// }
+// abcd()
 // d+e) null & undefined (same  as JS)
 // f) Never
 // function test():never {
@@ -52,3 +52,6 @@ abcd();
 // }
 // test();
 // console.log("hi");
+// 7) Type Inference and Type Annotation
+var a = 12; //inference
+var b = "ammar"; //annotation
