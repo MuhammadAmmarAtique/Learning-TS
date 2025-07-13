@@ -65,7 +65,7 @@
 // function test():never {
 //     while (true) {
 //         console.log("infinite");
-        
+
 //     }
 // }
 // test();
@@ -73,6 +73,9 @@
 
 // 7) Type Inference and Type Annotation
 
-let a = 12;  //inference
-let b:string = "ammar" //annotation
+// let a = 12;  //inference
+// let b:string = "ammar" //annotation
 
+// function test(a:number, b: number):number { //Here paramters and return type is defined using "type annotations"
+//     return 5
+// }

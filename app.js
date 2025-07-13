@@ -55,3 +55,6 @@
 // 7) Type Inference and Type Annotation
 var a = 12; //inference
 var b = "ammar"; //annotation
+function test(a, b) {
+    return 5;
+}
