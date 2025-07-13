@@ -119,8 +119,29 @@
 // })
 
 // d) Type Aliases
-type alllowedArguments = string | number | boolean;
-function Print(value: alllowedArguments) {
-  console.log(value);
-}
-Print("ammar");
+// type alllowedArguments = string | number | boolean;
+// function Print(value: alllowedArguments) {
+//   console.log(value);
+// }
+// Print("ammar");
+
+// e) Union Type
+let a: number| string;
+
+// f)intersection type
+// type one = {
+// name: string
+// }
+
+// type two = one & {
+//     age: number
+// }
+
+// function Test(paramter:two) {
+//     console.log(`${paramter.name}, ${paramter.age}`);
+// }
+
+// Test({
+//     name: "ammar",
+//     age: 22
+// })
