@@ -117,3 +117,10 @@
 //     age: 24,
 //     admin: false
 // })
+
+// d) Type Aliases
+type alllowedArguments = string | number | boolean;
+function Print(value: alllowedArguments) {
+  console.log(value);
+}
+Print("ammar");
