@@ -7,13 +7,19 @@
 // let d2 = new Device();
 // type d1 and d2 in browser console to see output
 // 2) Constructor
-var Bottle = /** @class */ (function () {
-    function Bottle(name, size) {
-        this.name = name;
-        this.size = size;
-    }
-    return Bottle;
-}());
-var b1 = new Bottle("Jojo", "small");
-var b2 = new Bottle("Momo", "small");
-var b3 = new Bottle("koko", "large");
+// 1) syntax one (short one)
+// class Bottle {
+//   constructor(public name: string, public size: string) {}
+// }
+// 1) syntax two (long one)
+// class Bottle {
+//   public name;
+//   public size;
+//   constructor(name: string, size: string) {
+//     this.name = name;
+//     this.size = size;
+//   }
+// }
+// let b1 = new Bottle("Jojo", "small");
+// let b2 = new Bottle("Momo", "small");
+// let b3 = new Bottle("koko", "large");

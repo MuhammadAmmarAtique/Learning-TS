@@ -12,10 +12,22 @@
 
 // 2) Constructor
 
-class Bottle {
-  constructor(public name: string, public size: string) {}
-}
+// 1) syntax one (short one)
+// class Bottle {
+//   constructor(public name: string, public size: string) {}
+// }
 
-let b1 = new Bottle("Jojo", "small");
-let b2 = new Bottle("Momo", "small");
-let b3 = new Bottle("koko", "large");
+// 1) syntax two (long one)
+// class Bottle {
+//   public name;
+//   public size;
+
+//   constructor(name: string, size: string) {
+//     this.name = name;
+//     this.size = size;
+//   }
+// }
+
+// let b1 = new Bottle("Jojo", "small");
+// let b2 = new Bottle("Momo", "small");
+// let b3 = new Bottle("koko", "large");
