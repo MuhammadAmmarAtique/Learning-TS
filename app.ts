@@ -126,7 +126,7 @@
 // Print("ammar");
 
 // e) Union Type
-let a: number| string;
+// let a: number| string;
 
 // f)intersection type
 // type one = {
