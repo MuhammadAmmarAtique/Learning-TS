@@ -31,3 +31,26 @@
 // let b1 = new Bottle("Jojo", "small");
 // let b2 = new Bottle("Momo", "small");
 // let b3 = new Bottle("koko", "large");
+
+// 3) Access Modifiers (3)
+class Parent {
+  public name;
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+
+class Child extends Parent {
+  public age;
+  constructor(name: string, age: number) {
+    super(name);
+    this.age = age;
+  }
+
+  print() {
+    console.log(`Hi my name is ${this.name} and my age is ${this.age}`);
+  }
+}
+
+let c1 = new Child("ammar", 23);
+c1.print()
