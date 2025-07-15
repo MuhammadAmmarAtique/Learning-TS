@@ -96,7 +96,7 @@
 // class ourHouse {
 //     static houseNumber =  8;
 //     static society =  "New City";
-    
+
 //     static Print(){
 //         return `Hello g ki haal chaal aa sab theek aa ?`
 //     }
@@ -104,3 +104,22 @@
 // console.log(ourHouse.houseNumber);
 // console.log(ourHouse.society);
 // console.log(ourHouse.Print());
+
+// 9) Abstract classes and methods
+
+// abstract class Animal {
+//   abstract voice(): void;
+//   animalMoves(): void {
+//     console.log(`Animal is Moving.`);
+//   }
+// }
+// class Cat extends Animal {
+//   voice(): void {
+//     console.log("Meow");
+//   }
+// }
+
+// let catOne = new Cat()
+// console.log(catOne.animalMoves());
+// console.log(catOne.voice());
+
