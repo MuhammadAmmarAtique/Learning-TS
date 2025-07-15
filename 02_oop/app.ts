@@ -67,9 +67,27 @@
 // let v1 = new Vehicle("Nissan Sunny")
 // v1.name = "test" //gives err becasuse of readonly
 
-// 5) Parameter Properties
+// 5+6) Parameter + Optional Properties
 // class House {
-//   constructor( public society : string,  public city: string  ) {
+//   constructor( public society : string,  public city?: string  ) {
 //   }
 // }
 // let h1 = new House("New City Phase 2", "Wah")
+
+// 7)Getters and Setters
+
+// class UserData {
+//   constructor(public _name :string, public age: 22) {
+//     this._name = _name;
+//     this.age = age;
+//   }
+
+//   get name(){ //getters
+//     return this._name;
+//   }
+
+//   set name(value: string){ //setter
+//     this._name = value;
+//   }
+// }
+// let u1 = new UserData("M Ammar Atiq", 22)
