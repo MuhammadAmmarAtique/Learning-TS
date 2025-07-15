@@ -91,3 +91,16 @@
 //   }
 // }
 // let u1 = new UserData("M Ammar Atiq", 22)
+
+// 8) Static Members
+// class ourHouse {
+//     static houseNumber =  8;
+//     static society =  "New City";
+    
+//     static Print(){
+//         return `Hello g ki haal chaal aa sab theek aa ?`
+//     }
+// }
+// console.log(ourHouse.houseNumber);
+// console.log(ourHouse.society);
+// console.log(ourHouse.Print());
