@@ -33,24 +33,43 @@
 // let b3 = new Bottle("koko", "large");
 
 // 3) Access Modifiers (3)
-class Parent {
-  public name;
-  constructor(name: string) {
-    this.name = name;
-  }
-}
+// class Parent {
+//   public name;
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+// }
 
-class Child extends Parent {
-  public age;
-  constructor(name: string, age: number) {
-    super(name);
-    this.age = age;
-  }
+// class Child extends Parent {
+//   public age;
+//   constructor(name: string, age: number) {
+//     super(name);
+//     this.age = age;
+//   }
 
-  print() {
-    console.log(`Hi my name is ${this.name} and my age is ${this.age}`);
-  }
-}
+//   print() {
+//     console.log(`Hi my name is ${this.name} and my age is ${this.age}`);
+//   }
+// }
 
-let c1 = new Child("ammar", 23);
-c1.print()
+// let c1 = new Child("ammar", 23);
+// c1.print()
+
+// 4)Readonly Properties
+
+// class Vehicle {
+//   public readonly name;
+//   constructor( name:string) {
+//     this.name = name;
+//   }
+// }
+
+// let v1 = new Vehicle("Nissan Sunny")
+// v1.name = "test" //gives err becasuse of readonly
+
+// 5) Parameter Properties
+// class House {
+//   constructor( public society : string,  public city: string  ) {
+//   }
+// }
+// let h1 = new House("New City Phase 2", "Wah")

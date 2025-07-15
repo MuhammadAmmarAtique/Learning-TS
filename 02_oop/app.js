@@ -1,19 +1,5 @@
+"use strict";
 // 1) Class Definition
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 // class Device {
 //   name = "Lg";
 //   price = 12000;
@@ -39,19 +25,36 @@ var __extends = (this && this.__extends) || (function () {
 // let b2 = new Bottle("Momo", "small");
 // let b3 = new Bottle("koko", "large");
 // 3) Access Modifiers (3)
-var Parent = /** @class */ (function () {
-    function Parent(name) {
-        this.name = name;
-    }
-    return Parent;
-}());
-var Child = /** @class */ (function (_super) {
-    __extends(Child, _super);
-    function Child(name, age) {
-        var _this = _super.call(this, name) || this;
-        _this.age = age;
-        return _this;
-    }
-    return Child;
-}(Parent));
-var c1 = new Child("ammar", 23);
+// class Parent {
+//   public name;
+//   constructor(name: string) {
+//     this.name = name;
+//   }
+// }
+// class Child extends Parent {
+//   public age;
+//   constructor(name: string, age: number) {
+//     super(name);
+//     this.age = age;
+//   }
+//   print() {
+//     console.log(`Hi my name is ${this.name} and my age is ${this.age}`);
+//   }
+// }
+// let c1 = new Child("ammar", 23);
+// c1.print()
+// 4)Readonly Properties
+// class Vehicle {
+//   public readonly name;
+//   constructor( name:string) {
+//     this.name = name;
+//   }
+// }
+// let v1 = new Vehicle("Nissan Sunny")
+// v1.name = "test" //gives err becasuse of readonly
+// 5) Parameter Properties
+// class House {
+//   constructor( public society : string,  public city: string  ) {
+//   }
+// }
+// let h1 = new House("New City Phase 2", "Wah")
