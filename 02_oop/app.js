@@ -1,4 +1,24 @@
 // 1) Class Definition
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 // class Device {
 //   name = "Lg";
 //   price = 12000;
@@ -99,16 +119,36 @@
 // console.log(catOne.voice());
 // 10) Functions
 // a+b)Function types
-function Test(name, age, cb) {
-    console.log("".concat(name, ", ").concat(age));
-    cb();
-}
-Test("ammar", 21, function () {
-    console.log("Hi from Test function.");
-});
-// c) optional and default parameters
-function optional(Parameter1, Parameter2) {
-    if (Parameter2 === void 0) { Parameter2 = 12; }
-    console.log("Hello ".concat(Parameter1, ", ").concat(Parameter2));
-}
-optional("asdf");
+// function Test(name: string, age: number, cb: ()=>void):void {
+//     console.log(`${name}, ${age}`);
+//     cb()
+//     }
+// Test("ammar", 21, ()=>{
+//     console.log("Hi from Test function.");
+// })
+// // c) optional and default parameters
+// function optional(Parameter1?:string,Parameter2: number = 12 ) {
+//     console.log(`Hello ${Parameter1}, ${Parameter2}`);  
+// }
+// optional("asdf")
+// d)Rest and Spread Operator
+// a)Rest operator
+// function TestingRestOperator(...args:any[]){
+// console.log(args);
+// }
+// TestingRestOperator(1,2,3,4,5,6,24,31,234,2,"sdf")
+// b)Spread operator
+// a) For Arrays
+var arr1 = [12, 2435, 234];
+var arr2 = ["asdf", 2435, 234];
+var arr3 = __spreadArray(__spreadArray([], arr1, true), arr2, true);
+console.log("arr3:", arr3);
+// b) For Objects
+var myobj1 = {
+    name: "ammar"
+};
+var myobj2 = {
+    age: 21
+};
+var myobj3 = __assign(__assign({}, myobj1), myobj2);
+console.log("myobj3:", myobj3);

@@ -126,20 +126,49 @@
 // 10) Functions
 // a+b)Function types
 
-function Test(name: string, age: number, cb: ()=>void):void {
-    console.log(`${name}, ${age}`);
-    cb()
-    }
+// function Test(name: string, age: number, cb: ()=>void):void {
+//     console.log(`${name}, ${age}`);
+//     cb()
+//     }
 
-Test("ammar", 21, ()=>{
-    console.log("Hi from Test function.");
-})
+// Test("ammar", 21, ()=>{
+//     console.log("Hi from Test function.");
+// })
 
-// c) optional and default parameters
-function optional(Parameter1?:string,Parameter2: number = 12 ) {
-    console.log(`Hello ${Parameter1}, ${Parameter2}`);  
+// // c) optional and default parameters
+// function optional(Parameter1?:string,Parameter2: number = 12 ) {
+//     console.log(`Hello ${Parameter1}, ${Parameter2}`);  
+// }
+// optional("asdf")
+
+// d)Rest and Spread Operator
+
+// a)Rest operator
+// function TestingRestOperator(...args:any[]){
+// console.log(args);
+
+// }
+// TestingRestOperator(1,2,3,4,5,6,24,31,234,2,"sdf")
+
+// b)Spread operator
+// a) For Arrays
+let arr1= [12,2435,234]
+let arr2= ["asdf",2435,234]
+
+let arr3=[...arr1, ...arr2]
+console.log("arr3:", arr3);
+
+// b) For Objects
+let myobj1 = {
+    name: "ammar"
 }
-optional("asdf")
-
+let myobj2={
+    age: 21
+}
+let myobj3={
+    ...myobj1,
+    ...myobj2
+}
+console.log("myobj3:", myobj3);
 
 
