@@ -152,23 +152,47 @@
 
 // b)Spread operator
 // a) For Arrays
-let arr1= [12,2435,234]
-let arr2= ["asdf",2435,234]
+// let arr1= [12,2435,234]
+// let arr2= ["asdf",2435,234]
 
-let arr3=[...arr1, ...arr2]
-console.log("arr3:", arr3);
+// let arr3=[...arr1, ...arr2]
+// console.log("arr3:", arr3);
 
-// b) For Objects
-let myobj1 = {
-    name: "ammar"
-}
-let myobj2={
-    age: 21
-}
-let myobj3={
-    ...myobj1,
-    ...myobj2
-}
-console.log("myobj3:", myobj3);
+// // b) For Objects
+// let myobj1 = {
+//     name: "ammar"
+// }
+// let myobj2={
+//     age: 21
+// }
+// let myobj3={
+//     ...myobj1,
+//     ...myobj2
+// }
+// console.log("myobj3:", myobj3);
+
+
+// e)Function Overloading
+
+// 1- function overload signature
+// function Test(a:number):number
+// function Test(a: string, b:number):string
+
+// 2- function body
+// function Test(a:any, b?:number){
+// if (typeof a === "number") {
+//    return a 
+// }
+// if (typeof a === "string" && typeof b === "number") {
+//    return a 
+// }
+// }
+
+// let show = Test("test234", 1)
+// console.log(show);
+
+
+
+
 
 

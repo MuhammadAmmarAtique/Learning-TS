@@ -1,24 +1,4 @@
 // 1) Class Definition
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 // class Device {
 //   name = "Lg";
 //   price = 12000;
@@ -139,16 +119,34 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 // TestingRestOperator(1,2,3,4,5,6,24,31,234,2,"sdf")
 // b)Spread operator
 // a) For Arrays
-var arr1 = [12, 2435, 234];
-var arr2 = ["asdf", 2435, 234];
-var arr3 = __spreadArray(__spreadArray([], arr1, true), arr2, true);
-console.log("arr3:", arr3);
-// b) For Objects
-var myobj1 = {
-    name: "ammar"
-};
-var myobj2 = {
-    age: 21
-};
-var myobj3 = __assign(__assign({}, myobj1), myobj2);
-console.log("myobj3:", myobj3);
+// let arr1= [12,2435,234]
+// let arr2= ["asdf",2435,234]
+// let arr3=[...arr1, ...arr2]
+// console.log("arr3:", arr3);
+// // b) For Objects
+// let myobj1 = {
+//     name: "ammar"
+// }
+// let myobj2={
+//     age: 21
+// }
+// let myobj3={
+//     ...myobj1,
+//     ...myobj2
+// }
+// console.log("myobj3:", myobj3);
+// e)Function Overloading
+// 1- function overload signature
+// function Test(a:number):number
+// function Test(a: string, b:number):string
+// 2- function body
+// function Test(a:any, b?:number){
+// if (typeof a === "number") {
+//    return a 
+// }
+// if (typeof a === "string" && typeof b === "number") {
+//    return a 
+// }
+// }
+// let show = Test("test234", 1)
+// console.log(show);
