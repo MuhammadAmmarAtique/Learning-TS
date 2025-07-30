@@ -123,3 +123,23 @@
 // console.log(catOne.animalMoves());
 // console.log(catOne.voice());
 
+// 10) Functions
+// a+b)Function types
+
+function Test(name: string, age: number, cb: ()=>void):void {
+    console.log(`${name}, ${age}`);
+    cb()
+    }
+
+Test("ammar", 21, ()=>{
+    console.log("Hi from Test function.");
+})
+
+// c) optional and default parameters
+function optional(Parameter1?:string,Parameter2: number = 12 ) {
+    console.log(`Hello ${Parameter1}, ${Parameter2}`);  
+}
+optional("asdf")
+
+
+

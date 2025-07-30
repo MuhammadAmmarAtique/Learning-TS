@@ -97,3 +97,18 @@
 // let catOne = new Cat()
 // console.log(catOne.animalMoves());
 // console.log(catOne.voice());
+// 10) Functions
+// a+b)Function types
+function Test(name, age, cb) {
+    console.log("".concat(name, ", ").concat(age));
+    cb();
+}
+Test("ammar", 21, function () {
+    console.log("Hi from Test function.");
+});
+// c) optional and default parameters
+function optional(Parameter1, Parameter2) {
+    if (Parameter2 === void 0) { Parameter2 = 12; }
+    console.log("Hello ".concat(Parameter1, ", ").concat(Parameter2));
+}
+optional("asdf");
