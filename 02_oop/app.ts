@@ -137,7 +137,7 @@
 
 // // c) optional and default parameters
 // function optional(Parameter1?:string,Parameter2: number = 12 ) {
-//     console.log(`Hello ${Parameter1}, ${Parameter2}`);  
+//     console.log(`Hello ${Parameter1}, ${Parameter2}`);
 // }
 // optional("asdf")
 
@@ -171,7 +171,6 @@
 // }
 // console.log("myobj3:", myobj3);
 
-
 // e)Function Overloading
 
 // 1- function overload signature
@@ -181,18 +180,31 @@
 // 2- function body
 // function Test(a:any, b?:number){
 // if (typeof a === "number") {
-//    return a 
+//    return a
 // }
 // if (typeof a === "string" && typeof b === "number") {
-//    return a 
+//    return a
 // }
 // }
 
 // let show = Test("test234", 1)
 // console.log(show);
 
+// 11) Generics
+// a) Generic function
 
+// 1-
+// function genericFunction<G>(a: G, b: boolean, c: number) {
+//   console.log(`${a},${b},${c}`);
+// }
 
+// genericFunction<string>(`false`, true, 123);
+// genericFunction(`false`, true, 123); //type inference is happening here
 
+// 2-
+// function log<G>(parameter:G) {
+//     console.log(parameter);
+// }
 
-
+// log(`sadfasd`)
+// log(3123)
