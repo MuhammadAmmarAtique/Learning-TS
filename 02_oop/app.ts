@@ -208,3 +208,33 @@
 
 // log(`sadfasd`)
 // log(3123)
+
+// b_Generic Interface
+
+// interface I<G>{
+//     name: string,
+//     age :number,
+//     ptanahi : G
+// }
+// function UseInterface(obj:I<boolean>) {
+//     console.log(obj.name);
+//     console.log(obj.age);
+//     console.log(obj.ptanahi);
+// }
+
+// UseInterface({
+//     name:`cancelAnimationFrame`,
+//     age:22,
+//     ptanahi: true
+// })
+
+// // c_Generic Classes
+
+// class Test<G> {
+//     constructor(public member: G) {
+//     }
+// }
+
+// let t1 = <String>(`asdf`)
+// let t2 = (true)
+// console.log(t1, t2);
