@@ -238,3 +238,42 @@
 // let t1 = <String>(`asdf`)
 // let t2 = (true)
 // console.log(t1, t2);
+
+// 12)Modules
+// 13) Type Assertion/Type Casting /non-null assertion operator
+// 14) Type Guards (2) Type Guards -> Type Narrowing
+// 1-type of narrowing
+
+// function Test(val: string | number) {
+//   if (typeof val === "number") {
+//     console.log("number hai G");
+//   }
+//   if (typeof val === "string") {
+//     console.log("string hai G");
+//   }
+// }
+
+// Test("1");
+
+// 2-instance of narrowing
+
+// class Car {
+//   constructor() {}
+// }
+
+// class Truck {
+//   constructor() {}
+// }
+
+// let c1 = new Car();
+// let t1 = new Truck();
+
+// function Test(val: Car | Truck) {
+//   if (val instanceof Car) {
+//     console.log("Car hai G");
+//   } else if (val instanceof Truck) {
+//     console.log("Truck hai G");
+//   }
+// }
+
+// Test(t1);
