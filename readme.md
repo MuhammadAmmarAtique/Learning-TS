@@ -30,5 +30,3 @@ A TypeScript learning repo covering both **fundamentals** and **object-oriented 
 * Functions, overloads, rest/spread operators
 * Generics (functions, interfaces, classes)
 * Type guards & narrowing
-
----
